@@ -30,9 +30,9 @@ function computerChoice() {
 function matchChoices(userChoice) {
 
     if (userChoice === computerMove) {
-        alert("Tie")
-        // alert(`Your Choice is ${userChoice} and computer choice is ${computerMove}.
-        // You won🥳 `)
+        alert(`Your Choice is ${userChoice} and computer choice is ${computerMove} You tie  `
+        )
+
     }
     else if (obj[userChoice] == computerMove) {
         alert(`Your Choice is ${userChoice} and computer choice is ${computerMove}.
@@ -41,7 +41,7 @@ function matchChoices(userChoice) {
         totalScore.textContent = `Score is : ${score}`
     }
     else {
-        alert("Loose");
+        alert(`Your Choice is ${userChoice} and computer choice is ${computerMove} You loose`)
     }
     computerChoice();
 
